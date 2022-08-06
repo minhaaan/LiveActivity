@@ -11,7 +11,40 @@
 		E96788BF289E949D00108676 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96788BE289E949D00108676 /* ContentView.swift */; };
 		E96788C1289E949E00108676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96788C0289E949E00108676 /* Assets.xcassets */; };
 		E96788C5289E949E00108676 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96788C4289E949E00108676 /* Preview Assets.xcassets */; };
+		E96788EC289E95E400108676 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96788EB289E95E400108676 /* WidgetKit.framework */; };
+		E96788EE289E95E400108676 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96788ED289E95E400108676 /* SwiftUI.framework */; };
+		E96788F1289E95E400108676 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96788F0289E95E400108676 /* OrderStatus.swift */; };
+		E96788F4289E95E400108676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96788F3289E95E400108676 /* Assets.xcassets */; };
+		E96788F6289E95E400108676 /* OrderStatus.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E96788F2289E95E400108676 /* OrderStatus.intentdefinition */; };
+		E96788F7289E95E400108676 /* OrderStatus.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E96788F2289E95E400108676 /* OrderStatus.intentdefinition */; };
+		E96788FA289E95E400108676 /* OrderStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E96788E9289E95E400108676 /* OrderStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9678903289E964200108676 /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9678902289E964200108676 /* OrderAttributes.swift */; };
+		E9678906289E971E00108676 /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9678902289E964200108676 /* OrderAttributes.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E96788F8289E95E400108676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E96788B1289E949D00108676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E96788E8289E95E400108676;
+			remoteInfo = OrderStatusExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E96788FB289E95E400108676 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E96788FA289E95E400108676 /* OrderStatusExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E96788B9289E949D00108676 /* LiveActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +53,16 @@
 		E96788C0289E949E00108676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96788C2289E949E00108676 /* LiveActivity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiveActivity.entitlements; sourceTree = "<group>"; };
 		E96788C4289E949E00108676 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E96788E9289E95E400108676 /* OrderStatusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OrderStatusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96788EB289E95E400108676 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E96788ED289E95E400108676 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E96788F0289E95E400108676 /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
+		E96788F2289E95E400108676 /* OrderStatus.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OrderStatus.intentdefinition; sourceTree = "<group>"; };
+		E96788F3289E95E400108676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E96788F5289E95E400108676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9678902289E964200108676 /* OrderAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAttributes.swift; sourceTree = "<group>"; };
+		E9678904289E966300108676 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/System/Library/Frameworks/ActivityKit.framework; sourceTree = DEVELOPER_DIR; };
+		E9678907289E990400108676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +73,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E96788E6289E95E400108676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96788EE289E95E400108676 /* SwiftUI.framework in Frameworks */,
+				E96788EC289E95E400108676 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				E96788BB289E949D00108676 /* LiveActivity */,
+				E96788EF289E95E400108676 /* OrderStatus */,
+				E96788EA289E95E400108676 /* Frameworks */,
 				E96788BA289E949D00108676 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				E96788B9289E949D00108676 /* LiveActivity.app */,
+				E96788E9289E95E400108676 /* OrderStatusExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +107,8 @@
 		E96788BB289E949D00108676 /* LiveActivity */ = {
 			isa = PBXGroup;
 			children = (
+				E9678907289E990400108676 /* Info.plist */,
+				E96788FF289E962300108676 /* Model */,
 				E96788BC289E949D00108676 /* LiveActivityApp.swift */,
 				E96788BE289E949D00108676 /* ContentView.swift */,
 				E96788C0289E949E00108676 /* Assets.xcassets */,
@@ -69,6 +126,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E96788EA289E95E400108676 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9678904289E966300108676 /* ActivityKit.framework */,
+				E96788EB289E95E400108676 /* WidgetKit.framework */,
+				E96788ED289E95E400108676 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E96788EF289E95E400108676 /* OrderStatus */ = {
+			isa = PBXGroup;
+			children = (
+				E96788F0289E95E400108676 /* OrderStatus.swift */,
+				E96788F2289E95E400108676 /* OrderStatus.intentdefinition */,
+				E96788F3289E95E400108676 /* Assets.xcassets */,
+				E96788F5289E95E400108676 /* Info.plist */,
+			);
+			path = OrderStatus;
+			sourceTree = "<group>";
+		};
+		E96788FF289E962300108676 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9678902289E964200108676 /* OrderAttributes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +165,34 @@
 				E96788B5289E949D00108676 /* Sources */,
 				E96788B6289E949D00108676 /* Frameworks */,
 				E96788B7289E949D00108676 /* Resources */,
+				E96788FB289E95E400108676 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E96788F9289E95E400108676 /* PBXTargetDependency */,
 			);
 			name = LiveActivity;
 			productName = LiveActivity;
 			productReference = E96788B9289E949D00108676 /* LiveActivity.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E96788E8289E95E400108676 /* OrderStatusExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96788FE289E95E400108676 /* Build configuration list for PBXNativeTarget "OrderStatusExtension" */;
+			buildPhases = (
+				E96788E5289E95E400108676 /* Sources */,
+				E96788E6289E95E400108676 /* Frameworks */,
+				E96788E7289E95E400108676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrderStatusExtension;
+			productName = OrderStatusExtension;
+			productReference = E96788E9289E95E400108676 /* OrderStatusExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +205,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					E96788B8289E949D00108676 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					E96788E8289E95E400108676 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -118,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				E96788B8289E949D00108676 /* LiveActivity */,
+				E96788E8289E95E400108676 /* OrderStatusExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +241,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E96788E7289E95E400108676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96788F4289E95E400108676 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +256,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96788F7289E95E400108676 /* OrderStatus.intentdefinition in Sources */,
 				E96788BF289E949D00108676 /* ContentView.swift in Sources */,
 				E96788BD289E949D00108676 /* LiveActivityApp.swift in Sources */,
+				E9678903289E964200108676 /* OrderAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96788E5289E95E400108676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9678906289E971E00108676 /* OrderAttributes.swift in Sources */,
+				E96788F1289E95E400108676 /* OrderStatus.swift in Sources */,
+				E96788F6289E95E400108676 /* OrderStatus.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E96788F9289E95E400108676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E96788E8289E95E400108676 /* OrderStatusExtension */;
+			targetProxy = E96788F8289E95E400108676 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E96788C6289E949E00108676 /* Debug */ = {
@@ -259,6 +396,7 @@
 		E96788C9289E949E00108676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LiveActivity/LiveActivity.entitlements;
@@ -269,6 +407,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveActivity/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -287,16 +426,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.minan.LiveActivity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E96788CA289E949E00108676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LiveActivity/LiveActivity.entitlements;
@@ -307,6 +449,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveActivity/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -325,10 +468,71 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.minan.LiveActivity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E96788FC289E95E400108676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7T8JF3V3RR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OrderStatus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OrderStatus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minan.LiveActivity.OrderStatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E96788FD289E95E400108676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7T8JF3V3RR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OrderStatus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OrderStatus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minan.LiveActivity.OrderStatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -349,6 +553,15 @@
 			buildConfigurations = (
 				E96788C9289E949E00108676 /* Debug */,
 				E96788CA289E949E00108676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96788FE289E95E400108676 /* Build configuration list for PBXNativeTarget "OrderStatusExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96788FC289E95E400108676 /* Debug */,
+				E96788FD289E95E400108676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

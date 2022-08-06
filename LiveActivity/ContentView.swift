@@ -6,16 +6,38 @@
 //
 
 import SwiftUI
+import WidgetKit
+import ActivityKit
 
 struct ContentView: View {
     var body: some View {
+      NavigationStack {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+          // MARK: Intializing Activity
+          Button("Start Activity") {
+            addLiveActivity()
+          }
         }
+        .navigationTitle("Live Activities")
+        .padding(15)
+      }
     }
+  
+  func addLiveActivity() {
+    let orderAttributes = OrderAttributes(orderNumber: 1244, orderItems: "HI MINAN")
+    let intialContentState = OrderAttributes.ContentState()
+    
+    do {
+      let activity = try Activity<OrderAttributes>.request(
+        attributes: orderAttributes,
+        contentState: intialContentState,
+        pushType: nil
+      )
+      print("Activity Added Successfully. id: \(activity.id)")
+    } catch {
+      print(error.localizedDescription)
+    }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
