@@ -10,17 +10,11 @@ import ActivityKit
 
 struct OrderAttributes: ActivityAttributes {
   struct ContentState: Codable, Hashable {
-    var status: Status = .received
+    var time: String = "0시간 30초"
   }
   
   // MARK: Other Properties
   var orderNumber: Int
   var orderItems: String
-}
-
-enum Status: String, CaseIterable, Codable, Equatable {
-  case received = "shippingbox.fill"
-  case progress = "person.bust"
-  case ready = "takeoutbag.and.cup.and.straw.fill"
 }
 

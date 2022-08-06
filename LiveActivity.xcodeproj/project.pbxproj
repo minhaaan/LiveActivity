@@ -20,6 +20,7 @@
 		E96788FA289E95E400108676 /* OrderStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E96788E9289E95E400108676 /* OrderStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E9678903289E964200108676 /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9678902289E964200108676 /* OrderAttributes.swift */; };
 		E9678906289E971E00108676 /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9678902289E964200108676 /* OrderAttributes.swift */; };
+		E9678909289EA1EB00108676 /* ActivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9678908289EA1EB00108676 /* ActivityHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		E9678902289E964200108676 /* OrderAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAttributes.swift; sourceTree = "<group>"; };
 		E9678904289E966300108676 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/System/Library/Frameworks/ActivityKit.framework; sourceTree = DEVELOPER_DIR; };
 		E9678907289E990400108676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E9678908289EA1EB00108676 /* ActivityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				E96788C0289E949E00108676 /* Assets.xcassets */,
 				E96788C2289E949E00108676 /* LiveActivity.entitlements */,
 				E96788C3289E949E00108676 /* Preview Content */,
+				E9678908289EA1EB00108676 /* ActivityHelper.swift */,
 			);
 			path = LiveActivity;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				E96788F7289E95E400108676 /* OrderStatus.intentdefinition in Sources */,
 				E96788BF289E949D00108676 /* ContentView.swift in Sources */,
+				E9678909289EA1EB00108676 /* ActivityHelper.swift in Sources */,
 				E96788BD289E949D00108676 /* LiveActivityApp.swift in Sources */,
 				E9678903289E964200108676 /* OrderAttributes.swift in Sources */,
 			);

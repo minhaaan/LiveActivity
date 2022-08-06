@@ -10,38 +10,37 @@ import WidgetKit
 import ActivityKit
 
 struct ContentView: View {
-    var body: some View {
-      NavigationStack {
-        VStack {
-          // MARK: Intializing Activity
-          Button("Start Activity") {
-            addLiveActivity()
-          }
-        }
-        .navigationTitle("Live Activities")
-        .padding(15)
-      }
-    }
   
-  func addLiveActivity() {
-    let orderAttributes = OrderAttributes(orderNumber: 1244, orderItems: "HI MINAN")
-    let intialContentState = OrderAttributes.ContentState()
-    
-    do {
-      let activity = try Activity<OrderAttributes>.request(
-        attributes: orderAttributes,
-        contentState: intialContentState,
-        pushType: nil
-      )
-      print("Activity Added Successfully. id: \(activity.id)")
-    } catch {
-      print(error.localizedDescription)
+  let helper: ActivityHelper = ActivityHelper()
+  
+  @State var a = 1
+  let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+  
+  var body: some View {
+    NavigationStack {
+      VStack {
+        // MARK: Intializing Activity
+        Button("Start Activity") {
+          helper.add()
+        }
+        Button("update") {
+          
+        }.onReceive(timer) { input in
+          
+        }
+      }
+      .navigationTitle("Live Activities")
+      .padding(15)
     }
+  }
+  
+  func sub() {
+    
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }

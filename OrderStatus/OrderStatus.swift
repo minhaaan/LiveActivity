@@ -8,9 +8,11 @@
 import WidgetKit
 import SwiftUI
 import Intents
+import ActivityKit
 
 @main
 struct OrderStatus: Widget {
+  
   var body: some WidgetConfiguration {
     ActivityConfiguration(attributesType: OrderAttributes.self) { context in
       // MARK: Live Activity View
@@ -18,7 +20,7 @@ struct OrderStatus: Widget {
       ZStack {
         Color.black
         HStack {
-          Text("이용시간: 16:35")
+          Text("\(context.state.time)")
             .foregroundColor(.white)
             .padding(.leading, 20)
           Spacer()
