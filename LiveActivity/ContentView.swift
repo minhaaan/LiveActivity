@@ -24,9 +24,7 @@ struct ContentView: View {
           helper.add()
         }
         Button("update") {
-          
-        }.onReceive(timer) { input in
-          
+          helper.update()
         }
       }
       .navigationTitle("Live Activities")
