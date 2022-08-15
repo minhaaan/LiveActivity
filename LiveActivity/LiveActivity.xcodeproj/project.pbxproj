@@ -13,7 +13,36 @@
 		E968542C28AAF4D00028962C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E968542A28AAF4D00028962C /* Main.storyboard */; };
 		E968542E28AAF4D10028962C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E968542D28AAF4D10028962C /* Assets.xcassets */; };
 		E968543128AAF4D10028962C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E968542F28AAF4D10028962C /* LaunchScreen.storyboard */; };
+		E968543F28AAF7200028962C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E968543E28AAF7200028962C /* WidgetKit.framework */; };
+		E968544128AAF7200028962C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E968544028AAF7200028962C /* SwiftUI.framework */; };
+		E968544428AAF7200028962C /* RidingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E968544328AAF7200028962C /* RidingWidget.swift */; };
+		E968544628AAF7210028962C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E968544528AAF7210028962C /* Assets.xcassets */; };
+		E968544A28AAF7210028962C /* RidingWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E968543C28AAF7200028962C /* RidingWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E968544828AAF7210028962C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E968541928AAF4D00028962C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E968543B28AAF7200028962C;
+			remoteInfo = RidingWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E968544E28AAF7210028962C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E968544A28AAF7210028962C /* RidingWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E968542128AAF4D00028962C /* LiveActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +53,12 @@
 		E968542D28AAF4D10028962C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E968543028AAF4D10028962C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E968543228AAF4D10028962C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E968543C28AAF7200028962C /* RidingWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RidingWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E968543E28AAF7200028962C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E968544028AAF7200028962C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E968544328AAF7200028962C /* RidingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidingWidget.swift; sourceTree = "<group>"; };
+		E968544528AAF7210028962C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E968544728AAF7210028962C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +69,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E968543928AAF7200028962C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E968544128AAF7200028962C /* SwiftUI.framework in Frameworks */,
+				E968543F28AAF7200028962C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				E968542328AAF4D00028962C /* LiveActivity */,
+				E968544228AAF7200028962C /* RidingWidget */,
+				E968543D28AAF7200028962C /* Frameworks */,
 				E968542228AAF4D00028962C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				E968542128AAF4D00028962C /* LiveActivity.app */,
+				E968543C28AAF7200028962C /* RidingWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +114,25 @@
 			path = LiveActivity;
 			sourceTree = "<group>";
 		};
+		E968543D28AAF7200028962C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E968543E28AAF7200028962C /* WidgetKit.framework */,
+				E968544028AAF7200028962C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E968544228AAF7200028962C /* RidingWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E968544328AAF7200028962C /* RidingWidget.swift */,
+				E968544528AAF7210028962C /* Assets.xcassets */,
+				E968544728AAF7210028962C /* Info.plist */,
+			);
+			path = RidingWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +143,34 @@
 				E968541D28AAF4D00028962C /* Sources */,
 				E968541E28AAF4D00028962C /* Frameworks */,
 				E968541F28AAF4D00028962C /* Resources */,
+				E968544E28AAF7210028962C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E968544928AAF7210028962C /* PBXTargetDependency */,
 			);
 			name = LiveActivity;
 			productName = LiveActivity;
 			productReference = E968542128AAF4D00028962C /* LiveActivity.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E968543B28AAF7200028962C /* RidingWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E968544B28AAF7210028962C /* Build configuration list for PBXNativeTarget "RidingWidgetExtension" */;
+			buildPhases = (
+				E968543828AAF7200028962C /* Sources */,
+				E968543928AAF7200028962C /* Frameworks */,
+				E968543A28AAF7200028962C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RidingWidgetExtension;
+			productName = RidingWidgetExtension;
+			productReference = E968543C28AAF7200028962C /* RidingWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +183,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					E968542028AAF4D00028962C = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					E968543B28AAF7200028962C = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -116,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				E968542028AAF4D00028962C /* LiveActivity */,
+				E968543B28AAF7200028962C /* RidingWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +217,14 @@
 				E968543128AAF4D10028962C /* LaunchScreen.storyboard in Resources */,
 				E968542E28AAF4D10028962C /* Assets.xcassets in Resources */,
 				E968542C28AAF4D00028962C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E968543A28AAF7200028962C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E968544628AAF7210028962C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +241,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E968543828AAF7200028962C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E968544428AAF7200028962C /* RidingWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E968544928AAF7210028962C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E968543B28AAF7200028962C /* RidingWidgetExtension */;
+			targetProxy = E968544828AAF7210028962C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E968542A28AAF4D00028962C /* Main.storyboard */ = {
@@ -283,6 +396,7 @@
 		E968543628AAF4D10028962C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +425,7 @@
 		E968543728AAF4D10028962C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +451,60 @@
 			};
 			name = Release;
 		};
+		E968544C28AAF7210028962C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7T8JF3V3RR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RidingWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RidingWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minan.LiveActivity.RidingWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E968544D28AAF7210028962C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7T8JF3V3RR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RidingWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RidingWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minan.LiveActivity.RidingWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +522,15 @@
 			buildConfigurations = (
 				E968543628AAF4D10028962C /* Debug */,
 				E968543728AAF4D10028962C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E968544B28AAF7210028962C /* Build configuration list for PBXNativeTarget "RidingWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E968544C28AAF7210028962C /* Debug */,
+				E968544D28AAF7210028962C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
