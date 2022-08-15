@@ -18,6 +18,8 @@
 		E968544428AAF7200028962C /* RidingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E968544328AAF7200028962C /* RidingWidget.swift */; };
 		E968544628AAF7210028962C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E968544528AAF7210028962C /* Assets.xcassets */; };
 		E968544A28AAF7210028962C /* RidingWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E968543C28AAF7200028962C /* RidingWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E968545028AAF79D0028962C /* RidingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E968544F28AAF79D0028962C /* RidingAttributes.swift */; };
+		E968545128AAF79D0028962C /* RidingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E968544F28AAF79D0028962C /* RidingAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,7 @@
 		E968544328AAF7200028962C /* RidingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidingWidget.swift; sourceTree = "<group>"; };
 		E968544528AAF7210028962C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E968544728AAF7210028962C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E968544F28AAF79D0028962C /* RidingAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidingAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,7 @@
 				E968542D28AAF4D10028962C /* Assets.xcassets */,
 				E968542F28AAF4D10028962C /* LaunchScreen.storyboard */,
 				E968543228AAF4D10028962C /* Info.plist */,
+				E968544F28AAF79D0028962C /* RidingAttributes.swift */,
 			);
 			path = LiveActivity;
 			sourceTree = "<group>";
@@ -236,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E968542928AAF4D00028962C /* ViewController.swift in Sources */,
+				E968545028AAF79D0028962C /* RidingAttributes.swift in Sources */,
 				E968542528AAF4D00028962C /* AppDelegate.swift in Sources */,
 				E968542728AAF4D00028962C /* SceneDelegate.swift in Sources */,
 			);
@@ -246,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E968544428AAF7200028962C /* RidingWidget.swift in Sources */,
+				E968545128AAF79D0028962C /* RidingAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

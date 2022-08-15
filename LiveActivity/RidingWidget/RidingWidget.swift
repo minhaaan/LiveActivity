@@ -22,10 +22,8 @@ struct RidingWidget: Widget {
     let kind: String = "RidingWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            RidingWidgetEntryView(entry: entry)
-        }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+      ActivityConfiguration(attributesType: <#T##_.Type#>) { context in
+        
+      }
     }
 }
