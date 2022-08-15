@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import ActivityKit
+import SwiftUI
 
 final class ViewController: UIViewController {
   
   // MARK: Properties
+  
+  private let helper = Helper()
   
   private let startButton: UIButton = {
     let button = UIButton(type: .system)
@@ -35,17 +39,21 @@ final class ViewController: UIViewController {
   // MARK: Method
   
   private func setupGesture() {
-    startButton.addTarget(nil, action: #selector(startButtonDidTapped), for: .touchUpInside)
-    stopButton.addTarget(nil, action: #selector(stopButtonDidTapped), for: .touchUpInside)
+    startButton.addTarget(self, action: #selector(startButtonDidTapped), for: .touchUpInside)
+    stopButton.addTarget(self, action: #selector(stopButtonDidTapped), for: .touchUpInside)
   }
   
   @objc private func startButtonDidTapped() {
     print("DEBUG: startButtonDidTapped")
+    helper.add()
   }
   
   @objc private func stopButtonDidTapped() {
     print("DEBUG: stopButtonDidTapped")
+    helper.stop()
   }
+  
+  
   
 }
 

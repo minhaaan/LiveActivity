@@ -8,13 +8,22 @@
 import WidgetKit
 import SwiftUI
 
-
-struct RidingWidgetEntryView : View {
-    var entry: Provider.Entry
-
-    var body: some View {
-        Text(entry.date, style: .time)
+struct RidingActivityView: View {
+  let context: ActivityViewContext<RidingAttributes>
+  
+  var body: some View {
+    VStack {
+      Text("이용시간")
+        .font(.headline)
+        .foregroundColor(.blue)
+      
+      let a = Date(timeInterval: 0, since: Date())
+//      Text("\(context.state.startTime.timeIntervalSince(Date()))")
+//      Text(context.state.startTime, style: .relative)
+      Text(a, style: .timer)
     }
+    .padding(.horizontal)
+  }
 }
 
 @main
@@ -22,8 +31,8 @@ struct RidingWidget: Widget {
     let kind: String = "RidingWidget"
 
     var body: some WidgetConfiguration {
-      ActivityConfiguration(attributesType: <#T##_.Type#>) { context in
-        
+      ActivityConfiguration(attributesType: RidingAttributes.self) { context in
+        RidingActivityView(context: context)
       }
     }
 }
