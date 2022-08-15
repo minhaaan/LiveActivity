@@ -11,16 +11,22 @@ import SwiftUI
 struct RidingActivityView: View {
   let context: ActivityViewContext<RidingAttributes>
   
+  private var ridingFee: Int {
+    return Int(abs(context.state.startTime.timeIntervalSince(Date()))) * 200
+  }
+  
   var body: some View {
-    VStack {
-      Text("이용시간")
-        .font(.headline)
-        .foregroundColor(.blue)
-      
-      let a = Date(timeInterval: 0, since: Date())
-//      Text("\(context.state.startTime.timeIntervalSince(Date()))")
-//      Text(context.state.startTime, style: .relative)
-      Text(a, style: .timer)
+    VStack(alignment: .leading) {
+      HStack {
+        Text("이용시간")
+          .font(.headline)
+        Text(context.state.startTime, style: .timer)
+      }
+      HStack {
+        Text("요금")
+          .font(.headline)
+        Text("\(ridingFee)")
+      }
     }
     .padding(.horizontal)
   }

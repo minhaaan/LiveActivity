@@ -15,6 +15,8 @@ final class ViewController: UIViewController {
   
   private let helper = Helper()
   
+  private var updateTimer: Timer? = nil
+  
   private let startButton: UIButton = {
     let button = UIButton(type: .system)
     button.setTitle("START", for: .normal)
@@ -24,6 +26,12 @@ final class ViewController: UIViewController {
   private let stopButton: UIButton = {
     let button = UIButton(type: .system)
     button.setTitle("STOP", for: .normal)
+    return button
+  }()
+  
+  private let updateButton: UIButton = {
+    let button = UIButton(type: .system)
+    button.setTitle("UPDATE", for: .normal)
     return button
   }()
   
@@ -41,18 +49,37 @@ final class ViewController: UIViewController {
   private func setupGesture() {
     startButton.addTarget(self, action: #selector(startButtonDidTapped), for: .touchUpInside)
     stopButton.addTarget(self, action: #selector(stopButtonDidTapped), for: .touchUpInside)
+    updateButton.addTarget(self, action: #selector(updateButtonDidTapped), for: .touchUpInside)
   }
   
   @objc private func startButtonDidTapped() {
     print("DEBUG: startButtonDidTapped")
     helper.add()
+    
+    updateTimer = Timer.scheduledTimer(
+      timeInterval: 1,
+      target: self,
+      selector: #selector(update),
+      userInfo: nil,
+      repeats: true
+    )
   }
   
   @objc private func stopButtonDidTapped() {
     print("DEBUG: stopButtonDidTapped")
+    updateTimer = nil
     helper.stop()
   }
   
+  @objc private func updateButtonDidTapped() {
+    print("DEBUG: updateButtonDidTapped")
+    helper.update()
+  }
+  
+  @objc private func update() {
+    print("DEBUG: 업데이트해따")
+    helper.update()
+  }
   
   
 }
@@ -65,6 +92,7 @@ extension ViewController {
     
     view.addSubview(startButton)
     view.addSubview(stopButton)
+    view.addSubview(updateButton)
     
     startButton.translatesAutoresizingMaskIntoConstraints = false
     NSLayoutConstraint.activate([
@@ -76,6 +104,12 @@ extension ViewController {
     NSLayoutConstraint.activate([
       stopButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       stopButton.topAnchor.constraint(equalTo: startButton.bottomAnchor, constant: 20)
+    ])
+    
+    updateButton.translatesAutoresizingMaskIntoConstraints = false
+    NSLayoutConstraint.activate([
+      updateButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+      updateButton.topAnchor.constraint(equalTo: stopButton.bottomAnchor, constant: 20)
     ])
   }
   
