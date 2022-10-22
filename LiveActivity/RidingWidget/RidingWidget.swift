@@ -60,12 +60,43 @@ struct RidingWidget: Widget {
           Text("bottom")
         }
       } compactLeading: {
-        Text("cl")
+//        Text("cl")
+        CompactLeadingView(context: context)
       } compactTrailing: {
-        Text("ct")
+//        Text("ct12345678910")
+        CompactTrailingView(context: context)
       } minimal: {
-        Text("mim")
+        Text("mim.......")
+        
       }
     }
   }
 }
+
+// MARK: CompactTrailingView
+
+@available(iOSApplicationExtension 16.1, *)
+struct CompactTrailingView: View {
+  let context: ActivityViewContext<RidingAttributes>
+  
+  private var ridingFee: Int {
+    return Int(abs(context.state.startTime.timeIntervalSince(Date()))) * 100
+  }
+  
+  var body: some View {
+    return Text("\(ridingFee)")
+  }
+}
+
+// MARK: CompactTrailingView
+
+@available(iOSApplicationExtension 16.1, *)
+struct CompactLeadingView: View {
+  let context: ActivityViewContext<RidingAttributes>
+  
+  var body: some View {
+    return Text(context.state.startTime, style: .timer)
+  }
+  
+}
+
