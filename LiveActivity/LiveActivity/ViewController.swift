@@ -67,6 +67,7 @@ final class ViewController: UIViewController {
   
   @objc private func stopButtonDidTapped() {
     print("DEBUG: stopButtonDidTapped")
+    updateTimer?.invalidate()
     updateTimer = nil
     helper.stop()
   }
