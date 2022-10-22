@@ -45,26 +45,26 @@ struct RidingWidget: Widget {
       DynamicIsland {
         // Create the expanded view.
         DynamicIslandExpandedRegion(.leading) {
-          Text("")
+          Text("leading")
         }
         
         DynamicIslandExpandedRegion(.trailing) {
-          Text("")
+          Text("trailing")
         }
         
         DynamicIslandExpandedRegion(.center) {
-          Text("")
+          Text("center")
         }
         
         DynamicIslandExpandedRegion(.bottom) {
-          Text("")
+          Text("bottom")
         }
       } compactLeading: {
-        Text("")
+        Text("cl")
       } compactTrailing: {
-        Text("")
+        Text("ct")
       } minimal: {
-        Text("")
+        Text("mim")
       }
     }
   }
