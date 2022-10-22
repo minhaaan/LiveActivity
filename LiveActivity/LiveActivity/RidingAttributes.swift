@@ -9,6 +9,7 @@ import SwiftUI
 import WidgetKit
 import ActivityKit
 
+
 struct RidingAttributes: ActivityAttributes {
   public typealias TimerStatus = ContentState
   

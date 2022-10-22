@@ -8,6 +8,7 @@
 import WidgetKit
 import SwiftUI
 
+@available(iOSApplicationExtension 16.1, *)
 struct RidingActivityView: View {
   let context: ActivityViewContext<RidingAttributes>
   
@@ -33,12 +34,38 @@ struct RidingActivityView: View {
 }
 
 @main
+@available(iOSApplicationExtension 16.1, *)
 struct RidingWidget: Widget {
-    let kind: String = "RidingWidget"
-
-    var body: some WidgetConfiguration {
-      ActivityConfiguration(attributesType: RidingAttributes.self) { context in
-        RidingActivityView(context: context)
+  let kind: String = "RidingWidget"
+  
+  var body: some WidgetConfiguration {
+    ActivityConfiguration(for: RidingAttributes.self) { context in
+      RidingActivityView(context: context)
+    } dynamicIsland: { context in
+      DynamicIsland {
+        // Create the expanded view.
+        DynamicIslandExpandedRegion(.leading) {
+          Text("")
+        }
+        
+        DynamicIslandExpandedRegion(.trailing) {
+          Text("")
+        }
+        
+        DynamicIslandExpandedRegion(.center) {
+          Text("")
+        }
+        
+        DynamicIslandExpandedRegion(.bottom) {
+          Text("")
+        }
+      } compactLeading: {
+        Text("")
+      } compactTrailing: {
+        Text("")
+      } minimal: {
+        Text("")
       }
     }
+  }
 }
